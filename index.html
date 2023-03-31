@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Bocchi the Clicker</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <p>Score : <span id="score">0</span></p>
+        <img src="imgs/bocchi.jpg" height="256px" width="256px" onclick="addToScore(clickingPower)">
+        
+        <button onclick="buyFans()">Fans [<span id="fansPrice">15</span>]</button>
+        <button onclick="buyGuitarPick()">Upgrade Guitar Pick [<span id="guitarPickPrice">30</span>]</button>
+        <p>Total Fans : <span id="fans">0</span></p>
+        <p>Guitar Pick : <span id="guitarPick">0</span></p>
+        
+        
+        <script src="function.js"></script>
+    </body>
+</html>
