@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+#bungkus {
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 5px;
+    float: left;
+}
+
+#menu ul li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#maingame{
+    margin: 10px auto 0;
+
+}
+
+#Clicker {
+    width: 80%;
+}
+
+#Upgrades {
+    float: right;
+    width: 20%;;
+}

@@ -4,15 +4,33 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <p>Score : <span id="score">0</span></p>
-        <img src="imgs/bocchi.jpg" height="256px" width="256px" onclick="addToScore(clickingPower)">
-        
-        <button onclick="buyFans()">Fans [<span id="fansPrice">15</span>]</button>
-        <button onclick="buyGuitarPick()">Upgrade Guitar Pick [<span id="guitarPickPrice">30</span>]</button>
-        <p>Total Fans : <span id="fans">0</span></p>
-        <p>Guitar Pick : <span id="guitarPick">0</span></p>
-        
-        
+    <div id="bungkus">
+        <div id="top">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Main Game</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <br>
+
+        <div id="maingame">
+            
+            <div id="Clicker">
+                <p >Score : <span id="score">0</span></p>
+                <img src="imgs/bocchi.jpg" height="256px" width="256px" onclick="addToScore(clickingPower)">
+                <p>Total Fans : <span id="fans">0</span></p>
+                <p>Guitar Pick : <span id="guitarPick">0</span></p>
+            </div>
+
+            <div id="Upgrades">
+                <button onclick="buyFans()">Fans [<span id="fansPrice">15</span>]</button>
+                <button onclick="buyGuitarPick()">Upgrade Guitar Pick [<span id="guitarPickPrice">30</span>]</button>
+            </div>
+        </div>
+    </div>
         <script src="function.js"></script>
     </body>
 </html>
