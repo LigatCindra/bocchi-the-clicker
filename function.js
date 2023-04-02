@@ -83,4 +83,24 @@ setInterval(function() {
                 document.title = score + " Money - Bocchi the Clicker";
             }, 1000);
 
+let event = document.getElementById("event");
+let eventTimer = null;
 
+function handleEventClick() {
+  addToScore(20); 
+  event.style.display = "none"; 
+}
+
+function showEvent() {
+  event.style.display = "block";
+  event.style.top = Math.floor(Math.random() * (window.innerHeight - event.offsetHeight)) + "px";
+  event.style.left = Math.floor(Math.random() * (window.innerWidth - event.offsetWidth)) + "px";
+  event.addEventListener("click", handleEventClick);
+  eventTimer = setTimeout(function() {
+    event.style.display = "none";
+    event.removeEventListener("click", handleEventClick);
+    showEvent();
+  }, 10000);
+}
+
+showEvent();
