@@ -83,24 +83,28 @@ setInterval(function() {
                 document.title = score + " Money - Bocchi the Clicker";
             }, 1000);
 
-let event = document.getElementById("event");
+// define variables for the event
+let eventBox = document.getElementById("event");
 let eventTimer = null;
 
+// define function to handle the event when it is clicked
 function handleEventClick() {
-  addToScore(20); 
-  event.style.display = "none"; 
+  addToScore(20); // add 20 to the user's money score
+  eventBox.style.display = "none"; // hide the event after it is clicked
 }
 
+// define function to randomly show the event every 10 seconds
 function showEvent() {
-  event.style.display = "block";
-  event.style.top = Math.floor(Math.random() * (window.innerHeight - event.offsetHeight)) + "px";
-  event.style.left = Math.floor(Math.random() * (window.innerWidth - event.offsetWidth)) + "px";
-  event.addEventListener("click", handleEventClick);
+  eventBox.style.display = "block";
+  eventBox.style.top = Math.floor(Math.random() * (window.innerHeight - eventBox.offsetHeight)) + "px";
+  eventBox.style.left = Math.floor(Math.random() * (window.innerWidth - eventBox.offsetWidth)) + "px";
+  eventBox.addEventListener("click", handleEventClick);
   eventTimer = setTimeout(function() {
-    event.style.display = "none";
-    event.removeEventListener("click", handleEventClick);
+    eventBox.style.display = "none";
+    eventBox.removeEventListener("click", handleEventClick);
     showEvent();
   }, 10000);
 }
 
+// call the showEvent function to start showing the event
 showEvent();
