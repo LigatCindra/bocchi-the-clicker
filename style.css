@@ -86,7 +86,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background-image: url('gambar/duit.jpg');
+    background-image: url('imgs/duit.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
