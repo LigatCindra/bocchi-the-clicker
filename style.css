@@ -1,96 +1,155 @@
+@media (min-width: 1200px){
+  .container{
+      max-width: 970px;
+  }
+}
+
 body {
-    margin: 0;
-    font-family: arial;
+  margin: 0;
+  font-family: arial;
+  background-image: url('imgs/wallpaperflare.com_wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bungkus {
-    width: 100%;
-    margin: 20px auto 0;
+  width: 100%;
+  margin: 20px auto 0;
 }
 
 #menu ul {
-    margin: 0;
-    padding: 5px;
-    float: left;
+  margin: 0;
+  padding: 5px;
+  float: left;
 }
 
 #menu ul li {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    margin-left: 15px;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin-left: 15px;
 }
 
-#maingame{
-    margin: 10px auto 0;
-
-}
-
-#Clicker {
-    width: 80%;
-    float: left;
-    text-align: center;
-}
-
-
-#Clicker img:hover{
-    background-image: url(imgs/bocchi.gif) no-repeat;
-    
+section {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }
 
 #Upgrades {
-    float: right;
-    width: 20%;;
+  float: center;
+  width: 50%;;
+  color: #957DAD;
 }
 
 #shopButton{
-    background-color: grey;
-    transition: all .2s ease-in-out;
-    border-radius: 10px;
-    width: 100%;
-    margin: 10px 0px 10px 0px;
+  background-color: #FFDFD3;
+  transition: all .2s ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
 }
 
 
 #shopButton:hover{
-    background-color: lightgray;
-    transition: all .2s ease-in-out;
+  background-color: #FEC8D8;
+  transition: all .2s ease-in-out;
 }
 
 #shopButton #images{
-    width: 25%;
+  width: 25%;
 }
 
 #shopButton img {
-    height: 64px;
-    width: 64px;
+  height: 64px;
+  width: 64px;
 }
 
 #shopButton #nameAndCost p{
-    margin: 0px;
-    width: 60%;
+  margin: 0px;
+  width: 60%;
 }
 
 #shopButton #nameAndcost p:first-of-type{
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #shopButton #amount {
-    font-size: 48px;
-    color: #585858;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 15%;
+  font-size: 48px;
+  color: #585858;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 15%;
+}
+.navbar-nav li:hover a {
+  color: #957DAD;
+  padding-bottom: 10px;
 }
 
-#event {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-image: url('imgs/duit.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    display: none;
-  }
-  
 
+#event {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('imgs/duit.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: none;
+}
+
+#Clicker {
+  width: 100%;
+}
+
+#Clicker img {
+  position: unset;
+  bottom: 0;
+  right: 0;
+}
+#Clicker img:hover{
+  cursor: pointer;
+  content: url("imgs/dying.gif");
+  height: 343px; 
+  width : 498px;
+}
+
+.kotak {
+  background-color: #957DAD;
+  color: #D291BC;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #FFDFD3;
+}
+
+#maingame {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+
+#asd {
+  display: fixed;
+  justify-content: space-between;
+}
+
+#asd .kotak {
+  text-align: center;
+  width: 300px;
+  background: #FFDFD3;
+  border-radius: 100px;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 400px;
+ 
+}
+
+.kotak img {
+  border-radius: 150px;
+  width: 150px;  
+} 
+
+footer {
+  color : #FFDFD3;
+}
