@@ -1,35 +1,70 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
         <title>Bocchi the Clicker</title>
         <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body>
-    <div id="bungkus">
-        <div id="top">
+        <div class="container" >
             <div id="menu">
-                <ul>
-                    <li><a href="index.html" onclick="return confirm('You are going to reset the game by doing this. Are you sure?');">Main Game</a></li>
-                    <li><a href="AboutUs.html" onclick="return confirm('You are going to reset the game by doing this. Are you sure?');">About Us</a></li>
-                </ul>
-            </div>
-            <br>
-        </div>
-    
+               <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+               <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E0BBE4;">
+                   <div class="container-fluid">
+                       <a id="logo" class="navbar-brand">
+                           <img src="imgs/logo 2.jpg" class="img-fluid" width="400" height="300" />
+                       </a>
+                       <button class="navbar-toggler" type="button"
+                       data-bs-toggle="collapse"
+                       data-bs-target="#navbarSupportedContent"
+                       aria-controls="navbarSupportedContent"
+                       aria-expanded="false"
+                       aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                   </button>
+           <div class="collapse navbar-collapse"
+           id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                       <a class="nav-link"
+                       aria-current="page" href="index.html" onclick="return confirm('You are going to reset the game by doing this. Are you sure?');">Main Game</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="aboutus.html" onclick="return confirm('You are going to reset the game by doing this. Are you sure?');">About Us</a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       </nav>
+       </div>
+   </div>
+   </div>
+    <section>
         <div id="maingame">
             <div id="Clicker">
                 <div id="event"></div>
+                <div class="kotak col-md-12" >
                 <p >Money : <span id="score">0</span></p>
                 <p>Total Money/second : <span id="moneypersecond">0</span></p>
                 <p>Clicking Power : <span id="clickdensity">1</span></p>
-                <img src="imgs/geleng-geleng.gif" height="343px" width="498px" onclick="addToScore(clickingPower)">
+                </div>
+                
+                <img src="imgs/geleng-geleng.gif" class="img-fluid" height="343px" width="498px" onclick="addToScore(clickingPower)">
             </div>
-
-            <div id="Upgrades">
+        </div>
+        </div>
+    </section>
+    <div id="Upgrades" class="container-fluid">
+                <div class="row text-center">
                     <table id="shopButton" onclick="buyFans()">
                         <tr>
                             <td id="images"><img src="imgs/gigachad.jpg"></td>
                             <td id="nameAndCost">
-                                <p>Fans</p>
+                                <p><strong>Fans</strong></p>
                                 <p><span id="fansPrice">15</span> Money</p>
                             </td>
                             <td id="amount"><span id="fans">0</span></td>
@@ -40,18 +75,18 @@
                         <tr>
                             <td id="images"><img src="imgs/maido.jpg"></td>
                             <td id="nameAndCost">
-                                <p>AdSens</p>
+                                <p><strong>Adsens</strong></p>
                                 <p><span id="AdSensPrice">50</span> Money</p>
                             </td>
                             <td id="amount"><span id="AdSens">0</span></td>
                         </tr>
                     </table>
-
+                        
                     <table id="shopButton" onclick="buyGuitarPick()">
                         <tr>
                             <td id="images"><img src="imgs/pick.png"></td>
                             <td id="nameAndCost">
-                                <p>Guitar Pick</p>
+                                <p><strong>Guitar Pick</strong></p>
                                 <p><span id="guitarPickPrice">200</span> Money</p>
                             </td>
                             <td id="amount"><span id="guitarpick">0</span></td>
@@ -61,10 +96,8 @@
         </div>
     
     </div>
-
-        
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="function.js"></script>
     </body>
 </html>
